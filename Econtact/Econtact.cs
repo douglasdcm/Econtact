@@ -13,7 +13,7 @@ namespace Econtact
 {
     public partial class Econtact : Form
     {
-        contactClass c = new contactClass();
+        Contact c = new Contact();
         public Econtact()
         {
             InitializeComponent();

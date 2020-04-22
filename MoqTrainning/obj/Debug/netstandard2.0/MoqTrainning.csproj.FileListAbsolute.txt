@@ -1,0 +1,8 @@
+C:\Users\Douglas\trainning\CSharp\Econtact\MoqTrainning\bin\Debug\netstandard2.0\MoqTrainning.deps.json
+C:\Users\Douglas\trainning\CSharp\Econtact\MoqTrainning\bin\Debug\netstandard2.0\MoqTrainning.dll
+C:\Users\Douglas\trainning\CSharp\Econtact\MoqTrainning\bin\Debug\netstandard2.0\MoqTrainning.pdb
+C:\Users\Douglas\trainning\CSharp\Econtact\MoqTrainning\obj\Debug\netstandard2.0\MoqTrainning.csproj.CoreCompileInputs.cache
+C:\Users\Douglas\trainning\CSharp\Econtact\MoqTrainning\obj\Debug\netstandard2.0\MoqTrainning.AssemblyInfoInputs.cache
+C:\Users\Douglas\trainning\CSharp\Econtact\MoqTrainning\obj\Debug\netstandard2.0\MoqTrainning.AssemblyInfo.cs
+C:\Users\Douglas\trainning\CSharp\Econtact\MoqTrainning\obj\Debug\netstandard2.0\MoqTrainning.dll
+C:\Users\Douglas\trainning\CSharp\Econtact\MoqTrainning\obj\Debug\netstandard2.0\MoqTrainning.pdb

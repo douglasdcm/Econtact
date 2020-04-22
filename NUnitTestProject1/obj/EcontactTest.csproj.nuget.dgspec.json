@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\Econtact\\Econtact.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\Econtact\\Econtact.csproj",
+        "projectName": "Econtact",
+        "projectPath": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\Econtact\\Econtact.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactTest.csproj",
+        "projectName": "EcontactTest",
+        "projectPath": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactTest.csproj",
+        "packagesPath": "C:\\Users\\Douglas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Douglas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\Econtact\\Econtact.csproj": {
+                "projectPath": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\Econtact\\Econtact.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

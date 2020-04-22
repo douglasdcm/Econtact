@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Econtact.econtactClasses
 {
-    class contactClass
+    public class Contact : IContact
     {
         //getter setter properties
         //acts as Data Carrie in our application
@@ -50,7 +50,7 @@ namespace Econtact.econtactClasses
         }
 
         //inserting data to databse
-        public bool Insert(contactClass c)
+        public bool Insert(Contact c)
         {
             //creating a default return type and setting its value sto false
             bool isSuccess = false;
@@ -96,7 +96,7 @@ namespace Econtact.econtactClasses
             return isSuccess;
         }
 
-        public bool Update(contactClass c)
+        public bool Update(Contact c)
         {
             bool isSuccess = false;
 
@@ -138,7 +138,7 @@ namespace Econtact.econtactClasses
         }
 
         //method to delete data from database
-        public bool Delete(contactClass c)
+        public bool Delete(Contact c)
         {
             //create a default valeu
             bool isSucess = false;
