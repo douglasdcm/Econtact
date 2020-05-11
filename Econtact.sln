@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Econtact", "Econtact\Econtact.csproj", "{907DD608-4169-4611-AF71-797747E3E9B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcontactTest", "NUnitTestProject1\EcontactTest.csproj", "{52C6DF6E-5B23-4D8C-AAF7-00E435606651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcontactTest", "NUnitTestProject1\EcontactTest.csproj", "{52C6DF6E-5B23-4D8C-AAF7-00E435606651}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

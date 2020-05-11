@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="1" result="Failed" label="Error" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.11.1.0" clr-version="4.0.30319.42000" start-time="2020-05-11 02:20:59Z" end-time="2020-05-11 02:20:59Z" duration="0.631902">
+  <command-line><![CDATA["C:\Users\Douglas\.nuget\packages\nunit.consolerunner\3.11.1\tools\nunit3-console.exe"  "C:\Users\Douglas\trainning\CSharp\Econtact\NUnitTestProject1\bin\Debug\netcoreapp2.2\EcontactTest.dll"]]></command-line>
+  <test-suite type="Assembly" id="0" name="" fullname="" runstate="NotRunnable" testcasecount="1" result="Failed" label="Error" start-time="2020-05-11 02:20:59Z" end-time="2020-05-11 02:20:59Z" duration="0.001" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <failure>
+      <message><![CDATA[NUnit.Engine.NUnitEngineException : An exception occurred in the driver while loading tests.
+  ----> System.IO.FileNotFoundException : Não foi possível carregar arquivo ou assembly 'nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.]]></message>
+      <stack-trace><![CDATA[--NUnitEngineException
+An exception occurred in the driver while loading tests.
+
+Server stack trace: 
+   em NUnit.Engine.Runners.DirectTestRunner.LoadDriver(IFrameworkDriver driver, String testFile, TestPackage subPackage)
+   em NUnit.Engine.Runners.DirectTestRunner.LoadPackage()
+   em NUnit.Engine.Runners.DirectTestRunner.EnsurePackageIsLoaded()
+   em NUnit.Engine.Runners.DirectTestRunner.RunTests(ITestEventListener listener, TestFilter filter)
+   em System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   em System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em NUnit.Engine.ITestEngineRunner.Run(ITestEventListener listener, TestFilter filter)
+   em NUnit.Engine.Runners.ProcessRunner.RunTests(ITestEventListener listener, TestFilter filter)
+--
+FileNotFoundException
+Não foi possível carregar arquivo ou assembly 'nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Activator.CreateInstance(String assemblyString, String typeName, Boolean ignoreCase, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, Evidence securityInfo, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(String assemblyName, String typeName, Boolean ignoreCase, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, Evidence securityInfo)
+   em System.AppDomain.CreateInstance(String assemblyName, String typeName, Boolean ignoreCase, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, Evidence securityAttributes)
+   em System.AppDomain.CreateInstanceAndUnwrap(String assemblyName, String typeName, Boolean ignoreCase, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, Evidence securityAttributes)
+   em System.AppDomain.CreateInstanceAndUnwrap(String assemblyName, String typeName, Boolean ignoreCase, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, Evidence securityAttributes)
+   em NUnit.Engine.Drivers.NUnit3FrameworkDriver.CreateObject(String typeName, Object[] args)
+   em NUnit.Engine.Drivers.NUnit3FrameworkDriver.Load(String testAssemblyPath, IDictionary`2 settings)
+   em NUnit.Engine.Runners.DirectTestRunner.LoadDriver(IFrameworkDriver driver, String testFile, TestPackage subPackage)
+]]></stack-trace>
+    </failure>
+  </test-suite>
+</test-run>
