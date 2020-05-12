@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="4dcae4a7-f6a8-4193-ada0-08365fbde2d3" name="Douglas@DESKTOP-UJI8L8D 2020-05-11 22:04:53" runUser="DESKTOP-UJI8L8D\Douglas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2020-05-11T22:04:53.9034383-03:00" queuing="2020-05-11T22:04:53.9034383-03:00" start="2020-05-11T22:04:52.2533613-03:00" finish="2020-05-11T22:04:53.9903860-03:00" />
+  <TestSettings name="default" id="7d704003-4552-4fbb-b706-eb0c9f9afefc">
+    <Deployment runDeploymentRoot="Douglas_DESKTOP-UJI8L8D_2020-05-11_22_04_53" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="137aad41-ab80-473e-b9ab-67109238444f" testId="d7dbddf3-6477-8af3-4ea7-182a58cf3234" testName="Select_Should_Pass" computerName="DESKTOP-UJI8L8D" duration="00:00:00.0023144" startTime="2020-05-11T22:04:53.6504981-03:00" endTime="2020-05-11T22:04:53.6524960-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="137aad41-ab80-473e-b9ab-67109238444f">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method UnitTests.Tests.Select_Should_Pass threw exception: &#xD;
+System.TypeInitializationException: O inicializador de tipo de 'Econtact.econtactClasses.Contact' acionou uma exceção. ---&gt; System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>    em Econtact.econtactClasses.Contact..cctor() na C:\Users\Douglas\trainning\CSharp\Econtact\Econtact\econtactClasses\Contact.cs:linha 23&#xD;
+--- End of inner exception stack trace ---&#xD;
+    em Econtact.econtactClasses.Contact..ctor()&#xD;
+   em UnitTests.Tests.GetListOfContacts() na C:\Users\Douglas\trainning\CSharp\Econtact\EcontactUnitTest\ContactTest.cs:linha 49&#xD;
+   em UnitTests.Tests.Select_Should_Pass() na C:\Users\Douglas\trainning\CSharp\Econtact\EcontactUnitTest\ContactTest.cs:linha 34&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="988fd929-1f7a-413c-92b6-a6ed16c81632" testId="fb0331ef-f6e0-6db0-1bce-367670acd6da" testName="InsertTest_Should_Pass" computerName="DESKTOP-UJI8L8D" duration="00:00:00.1847648" startTime="2020-05-11T22:04:53.3536807-03:00" endTime="2020-05-11T22:04:53.6405030-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="988fd929-1f7a-413c-92b6-a6ed16c81632">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method UnitTests.Tests.InsertTest_Should_Pass threw exception: &#xD;
+System.TypeInitializationException: O inicializador de tipo de 'Econtact.econtactClasses.Contact' acionou uma exceção. ---&gt; System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>    em Econtact.econtactClasses.Contact..cctor() na C:\Users\Douglas\trainning\CSharp\Econtact\Econtact\econtactClasses\Contact.cs:linha 23&#xD;
+--- End of inner exception stack trace ---&#xD;
+    em Econtact.econtactClasses.Contact..ctor()&#xD;
+   em UnitTests.Tests.InsertTest_Should_Pass() na C:\Users\Douglas\trainning\CSharp\Econtact\EcontactUnitTest\ContactTest.cs:linha 14&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="InsertTest_Should_Pass" storage="c:\users\douglas\trainning\csharp\econtact\econtactunittest\bin\debug\econtactunittest.dll" id="fb0331ef-f6e0-6db0-1bce-367670acd6da">
+      <Execution id="988fd929-1f7a-413c-92b6-a6ed16c81632" />
+      <TestMethod codeBase="C:\Users\Douglas\trainning\CSharp\Econtact\EcontactUnitTest\bin\Debug\EcontactUnitTest.dll" adapterTypeName="executor://mstestadapter/v2" className="UnitTests.Tests" name="InsertTest_Should_Pass" />
+    </UnitTest>
+    <UnitTest name="Select_Should_Pass" storage="c:\users\douglas\trainning\csharp\econtact\econtactunittest\bin\debug\econtactunittest.dll" id="d7dbddf3-6477-8af3-4ea7-182a58cf3234">
+      <Execution id="137aad41-ab80-473e-b9ab-67109238444f" />
+      <TestMethod codeBase="C:\Users\Douglas\trainning\CSharp\Econtact\EcontactUnitTest\bin\Debug\EcontactUnitTest.dll" adapterTypeName="executor://mstestadapter/v2" className="UnitTests.Tests" name="Select_Should_Pass" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d7dbddf3-6477-8af3-4ea7-182a58cf3234" executionId="137aad41-ab80-473e-b9ab-67109238444f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb0331ef-f6e0-6db0-1bce-367670acd6da" executionId="988fd929-1f7a-413c-92b6-a6ed16c81632" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados que não estão em uma lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos os resultados carregados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="0" failed="2" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>
