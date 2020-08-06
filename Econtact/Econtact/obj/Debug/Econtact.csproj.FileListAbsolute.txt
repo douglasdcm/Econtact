@@ -19,3 +19,4 @@ C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\Econtact\obj\Debug\E
 C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\Econtact\obj\Debug\Econtact.csproj.CoreCompileInputs.cache
 C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\Econtact\obj\Debug\Econtact.exe
 C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\Econtact\obj\Debug\Econtact.pdb
+C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\Econtact\obj\Debug\Econtact.csprojAssemblyReference.cache

@@ -161,7 +161,7 @@ namespace Econtact.econtactClasses
                 }
             }catch(Exception ex)
             {
-
+                throw ex;
             }
             finally
             {

@@ -9,17 +9,27 @@ using System.Text;
 
 namespace EcontactUnitTest
 {
+    enum ContactTable
+    {
+        ContactID = 1,
+        FirstName = 2,
+        LastName = 3,
+        ContactNo = 4,
+        Address = 5,
+        Gender = 6
+    }
+
     [TestClass]
     public class Tests
     {
-        private static string myconnstring = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
+        private string myconnstring = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
 
         private Contact contact = new Contact()
         {
             FirstName = "FirstName",
             LastName = "LastName",
             Address = "Address",
-            ContactID = 123,
+            ContactID = 1,
             ContacNo = "234567",
             Gender = "male"
         };
@@ -29,7 +39,7 @@ namespace EcontactUnitTest
             FirstName = "FirstName2",
             LastName = "LastName2",
             Address = "Address2",
-            ContactID = 1232,
+            ContactID = 2,
             ContacNo = "2345672",
             Gender = "female"
         };
@@ -39,20 +49,10 @@ namespace EcontactUnitTest
             FirstName = "FirstName3",
             LastName = "LastName3",
             Address = "Address3",
-            ContactID = 1233,
+            ContactID = 3,
             ContacNo = "2345673",
             Gender = "female"
-        };
-
-        enum ContactTable
-        {
-            ContactID = 1,
-            FirstName = 2,
-            LastName = 3,
-            ContactNo = 4,
-            Address = 5,
-            Gender = 6
-        }
+        };        
 
         private DataTable DropTableIfExists()
         {
@@ -180,6 +180,8 @@ namespace EcontactUnitTest
         public void UpdateTest_Using_LocalDB_Passing_Invalid_Id_Should_Return_False()
         {
             //Arrange
+            contact.ContactID = 123456;
+
             contact.Insert(contact);
 
             //Act
@@ -222,6 +224,90 @@ namespace EcontactUnitTest
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [Ignore("Not possible to chage the connection string")]
+        [TestMethod]
+        [ExpectedException(typeof(System.Data.SqlClient.SqlException))]
+        public void SelectTest_Using_LocalDB_With_Fake_Connection_Return_Exception()
+        {
+            //Arrange
+            string myconnstring = ConfigurationManager.ConnectionStrings["connstringFake"].ConnectionString;
+
+            //Act
+            contact.Select();
+        }
+
+        [TestMethod]
+        public void DeleteTest_Using_LocalDB_Should_Pass()
+        {
+            //Arrange
+            //Arrange
+            contact.Insert(contact);
+            contact.Insert(contact2);
+            contact.Insert(contact3);
+
+            var expected = 2;
+
+            //Act
+            contact.ContactID = 1;
+
+            var actual = contact.Delete(contact);
+
+            var actualQtde = contact.Select().Rows.Count;
+
+            //Assert
+            Assert.IsTrue(actual);
+            Assert.AreEqual(expected, actualQtde);
+        }
+
+        [TestMethod]
+        public void DeleteTest_Using_LocalDB_Using_invalid_Id_Should_Return_False()
+        {
+            //Arrange
+            contact.ContactID = 123456;
+
+            contact.Insert(contact);
+            contact.Insert(contact2);
+            contact.Insert(contact3);
+
+
+            var expected = 3;
+
+            //Act
+
+            var actual = contact.Delete(contact);
+
+            var actualQtde = contact.Select().Rows.Count;
+
+            //Assert
+            Assert.IsFalse(actual);
+            Assert.AreEqual(expected, actualQtde);
+        }
+
+
+        [TestMethod]
+        [ExpectedException(typeof(System.NullReferenceException))]
+        private void DeleteTest_Using_LocalDB_Using_invalid_Contact_Should_Return_Exception()
+        {
+            //Arrange
+            contact.Insert(contact);
+            contact.Insert(contact2);
+            contact.Insert(contact3);
+
+            //Act
+
+            contact.Delete(null);
+        }
+
+        [TestMethod]
+        public void FormTest_ClickButton()
+        {
+            var econtact = new Econtact.Econtact();
+            //var contactDesigner = new Econtact.Designer();
+            //econtact.ButtonAdd_Click(new object(), new EventArgs());
+
+
+        } 
 
     }
 }
