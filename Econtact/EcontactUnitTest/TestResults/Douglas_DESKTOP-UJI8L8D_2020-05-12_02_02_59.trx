@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="1c018382-b4aa-4e79-b9e3-e796580a4fa6" name="Douglas@DESKTOP-UJI8L8D 2020-05-12 02:02:59" runUser="DESKTOP-UJI8L8D\Douglas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2020-05-12T02:02:59.2665469-03:00" queuing="2020-05-12T02:02:59.2665469-03:00" start="2020-05-12T02:02:56.0506056-03:00" finish="2020-05-12T02:03:00.2369006-03:00" />
+  <TestSettings name="default" id="d36792f3-5052-46ad-84c5-c911d80c7206">
+    <Deployment runDeploymentRoot="Douglas_DESKTOP-UJI8L8D_2020-05-12_02_02_59" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="450f4e5b-0838-4c2c-9065-0a46c0d804e4" testId="ba66536a-8fa4-dc6e-5066-48b6a3729a77" testName="UpdateTest_Using_LocalDB_Contact_Null_Should_Throw_Exception" computerName="DESKTOP-UJI8L8D" duration="00:00:00.0089505" startTime="2020-05-12T02:02:58.3695055-03:00" endTime="2020-05-12T02:02:58.3786522-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="450f4e5b-0838-4c2c-9065-0a46c0d804e4" />
+    <UnitTestResult executionId="f4afffd7-c9da-485d-9436-083acf300003" testId="de6958f1-5cb6-3473-4b5a-5c7ac9b305d1" testName="InsertTest_Using_Mock_Should_Pass" computerName="DESKTOP-UJI8L8D" duration="00:00:01.1302214" startTime="2020-05-12T02:02:57.0332877-03:00" endTime="2020-05-12T02:02:58.2734655-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4afffd7-c9da-485d-9436-083acf300003" />
+    <UnitTestResult executionId="b40d8560-dc73-4a25-ac36-26b5b51e5532" testId="9f1f392f-93c9-29da-2909-3a56c5d173cd" testName="InsertTest_Using_LocalDB_Adding_Null_Contact_Should_Fail" computerName="DESKTOP-UJI8L8D" duration="00:00:00.0199955" startTime="2020-05-12T02:02:58.3359200-03:00" endTime="2020-05-12T02:02:58.3555136-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b40d8560-dc73-4a25-ac36-26b5b51e5532" />
+    <UnitTestResult executionId="00d2190b-11fa-40ff-ad91-f040b20fe4b7" testId="6e5bb38c-2181-2ef6-3152-418b07557d09" testName="UpdateTest_Using_LocalDB_Should_Pass" computerName="DESKTOP-UJI8L8D" duration="00:00:00.0129326" startTime="2020-05-12T02:02:58.3565145-03:00" endTime="2020-05-12T02:02:58.3695055-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00d2190b-11fa-40ff-ad91-f040b20fe4b7" />
+    <UnitTestResult executionId="a2c72a9e-3f30-405c-86ef-281f90e1cf1d" testId="825f3552-2ce5-0e6d-2396-e0188061875f" testName="Select_Using_Mock_Should_Pass" computerName="DESKTOP-UJI8L8D" duration="00:00:00.1545881" startTime="2020-05-12T02:02:58.3786522-03:00" endTime="2020-05-12T02:02:58.5342539-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2c72a9e-3f30-405c-86ef-281f90e1cf1d" />
+    <UnitTestResult executionId="e9922061-ae7a-48de-bdb4-559bdc3f65ea" testId="4ad0bac9-b70a-a734-317a-3e074a36f9d5" testName="InsertTest_Using_LocalDB_Should_Pass" computerName="DESKTOP-UJI8L8D" duration="00:00:00.0520507" startTime="2020-05-12T02:02:58.2824600-03:00" endTime="2020-05-12T02:02:58.3349204-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9922061-ae7a-48de-bdb4-559bdc3f65ea" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="InsertTest_Using_LocalDB_Should_Pass" storage="c:\users\douglas\trainning\csharp\econtactsolution\econtact\econtactunittest\bin\debug\econtactunittest.dll" id="4ad0bac9-b70a-a734-317a-3e074a36f9d5">
+      <Execution id="e9922061-ae7a-48de-bdb4-559bdc3f65ea" />
+      <TestMethod codeBase="C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\EcontactUnitTest\bin\Debug\EcontactUnitTest.dll" adapterTypeName="executor://mstestadapter/v2" className="EcontactUnitTest.Tests" name="InsertTest_Using_LocalDB_Should_Pass" />
+    </UnitTest>
+    <UnitTest name="InsertTest_Using_Mock_Should_Pass" storage="c:\users\douglas\trainning\csharp\econtactsolution\econtact\econtactunittest\bin\debug\econtactunittest.dll" id="de6958f1-5cb6-3473-4b5a-5c7ac9b305d1">
+      <Execution id="f4afffd7-c9da-485d-9436-083acf300003" />
+      <TestMethod codeBase="C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\EcontactUnitTest\bin\Debug\EcontactUnitTest.dll" adapterTypeName="executor://mstestadapter/v2" className="EcontactUnitTest.Tests" name="InsertTest_Using_Mock_Should_Pass" />
+    </UnitTest>
+    <UnitTest name="UpdateTest_Using_LocalDB_Should_Pass" storage="c:\users\douglas\trainning\csharp\econtactsolution\econtact\econtactunittest\bin\debug\econtactunittest.dll" id="6e5bb38c-2181-2ef6-3152-418b07557d09">
+      <Execution id="00d2190b-11fa-40ff-ad91-f040b20fe4b7" />
+      <TestMethod codeBase="C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\EcontactUnitTest\bin\Debug\EcontactUnitTest.dll" adapterTypeName="executor://mstestadapter/v2" className="EcontactUnitTest.Tests" name="UpdateTest_Using_LocalDB_Should_Pass" />
+    </UnitTest>
+    <UnitTest name="Select_Using_Mock_Should_Pass" storage="c:\users\douglas\trainning\csharp\econtactsolution\econtact\econtactunittest\bin\debug\econtactunittest.dll" id="825f3552-2ce5-0e6d-2396-e0188061875f">
+      <Execution id="a2c72a9e-3f30-405c-86ef-281f90e1cf1d" />
+      <TestMethod codeBase="C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\EcontactUnitTest\bin\Debug\EcontactUnitTest.dll" adapterTypeName="executor://mstestadapter/v2" className="EcontactUnitTest.Tests" name="Select_Using_Mock_Should_Pass" />
+    </UnitTest>
+    <UnitTest name="InsertTest_Using_LocalDB_Adding_Null_Contact_Should_Fail" storage="c:\users\douglas\trainning\csharp\econtactsolution\econtact\econtactunittest\bin\debug\econtactunittest.dll" id="9f1f392f-93c9-29da-2909-3a56c5d173cd">
+      <Execution id="b40d8560-dc73-4a25-ac36-26b5b51e5532" />
+      <TestMethod codeBase="C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\EcontactUnitTest\bin\Debug\EcontactUnitTest.dll" adapterTypeName="executor://mstestadapter/v2" className="EcontactUnitTest.Tests" name="InsertTest_Using_LocalDB_Adding_Null_Contact_Should_Fail" />
+    </UnitTest>
+    <UnitTest name="UpdateTest_Using_LocalDB_Contact_Null_Should_Throw_Exception" storage="c:\users\douglas\trainning\csharp\econtactsolution\econtact\econtactunittest\bin\debug\econtactunittest.dll" id="ba66536a-8fa4-dc6e-5066-48b6a3729a77">
+      <Execution id="450f4e5b-0838-4c2c-9065-0a46c0d804e4" />
+      <TestMethod codeBase="C:\Users\Douglas\trainning\CSharp\EcontactSolution\Econtact\EcontactUnitTest\bin\Debug\EcontactUnitTest.dll" adapterTypeName="executor://mstestadapter/v2" className="EcontactUnitTest.Tests" name="UpdateTest_Using_LocalDB_Contact_Null_Should_Throw_Exception" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ba66536a-8fa4-dc6e-5066-48b6a3729a77" executionId="450f4e5b-0838-4c2c-9065-0a46c0d804e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de6958f1-5cb6-3473-4b5a-5c7ac9b305d1" executionId="f4afffd7-c9da-485d-9436-083acf300003" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f1f392f-93c9-29da-2909-3a56c5d173cd" executionId="b40d8560-dc73-4a25-ac36-26b5b51e5532" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e5bb38c-2181-2ef6-3152-418b07557d09" executionId="00d2190b-11fa-40ff-ad91-f040b20fe4b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="825f3552-2ce5-0e6d-2396-e0188061875f" executionId="a2c72a9e-3f30-405c-86ef-281f90e1cf1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ad0bac9-b70a-a734-317a-3e074a36f9d5" executionId="e9922061-ae7a-48de-bdb4-559bdc3f65ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados que não estão em uma lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos os resultados carregados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

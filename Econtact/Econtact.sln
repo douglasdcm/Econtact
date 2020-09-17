@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Econtact", "Econtact\Econtact.csproj", "{907DD608-4169-4611-AF71-797747E3E9B6}"
+EndProject
+<<<<<<< HEAD:Econtact.sln
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcontactNUnitTest", "NUnitTestProject1\EcontactNUnitTest.csproj", "{52C6DF6E-5B23-4D8C-AAF7-00E435606651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcontactUnitTest", "EcontactUnitTest\EcontactUnitTest.csproj", "{158FE5EE-669C-4377-80B5-0106E0844BC2}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcontactUnitTest", "EcontactUnitTest\EcontactUnitTest.csproj", "{62062FD8-B9C2-4FB2-817B-FD812BD7EE89}"
+>>>>>>> 61063d9b555ced6a3ae84b975287332575bbdd5c:Econtact/Econtact.sln
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{907DD608-4169-4611-AF71-797747E3E9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{907DD608-4169-4611-AF71-797747E3E9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{907DD608-4169-4611-AF71-797747E3E9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{907DD608-4169-4611-AF71-797747E3E9B6}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD:Econtact.sln
+		{52C6DF6E-5B23-4D8C-AAF7-00E435606651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C6DF6E-5B23-4D8C-AAF7-00E435606651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C6DF6E-5B23-4D8C-AAF7-00E435606651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C6DF6E-5B23-4D8C-AAF7-00E435606651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158FE5EE-669C-4377-80B5-0106E0844BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158FE5EE-669C-4377-80B5-0106E0844BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158FE5EE-669C-4377-80B5-0106E0844BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158FE5EE-669C-4377-80B5-0106E0844BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{62062FD8-B9C2-4FB2-817B-FD812BD7EE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62062FD8-B9C2-4FB2-817B-FD812BD7EE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62062FD8-B9C2-4FB2-817B-FD812BD7EE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62062FD8-B9C2-4FB2-817B-FD812BD7EE89}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 61063d9b555ced6a3ae84b975287332575bbdd5c:Econtact/Econtact.sln
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE1C73E4-DA0D-40D2-8F8E-04C5E02E1DF6}
+	EndGlobalSection
+EndGlobal
