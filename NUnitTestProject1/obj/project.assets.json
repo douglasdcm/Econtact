@@ -712,12 +712,6 @@
       "NUnit.Extension.VSProjectLoader/3.8.0": {
         "type": "package"
       },
-      "NUnit.Runners/3.11.1": {
-        "type": "package",
-        "dependencies": {
-          "NUnit.Console": "3.11.1"
-        }
-      },
       "NUnit3TestAdapter/3.11.0": {
         "type": "package",
         "dependencies": {
@@ -733,6 +727,19 @@
         },
         "build": {
           "build/netcoreapp1.0/NUnit3TestAdapter.props": {}
+        }
+      },
+      "NUnitLite/3.12.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "NUnit": "[3.12.0]"
+        },
+        "compile": {
+          "lib/netstandard2.0/nunitlite.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunitlite.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -2841,18 +2848,6 @@
         "tools/vs-project-loader.dll"
       ]
     },
-    "NUnit.Runners/3.11.1": {
-      "sha512": "v32owFCOXni6HNWvKqUcdT2Wh4Nhz4B0rsNx+IKQuyCa/FZE+qY3LJaGctjxc7l+EWvl3aXUfzb1kEpICwMqPQ==",
-      "type": "package",
-      "path": "nunit.runners/3.11.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "nunit.runners.3.11.1.nupkg.sha512",
-        "nunit.runners.nuspec"
-      ]
-    },
     "NUnit3TestAdapter/3.11.0": {
       "sha512": "Ae4UL0lBn09Wvr6hsF3VmiBtKdaJlfpc+KIfjd4ukUzEipltjl9vKs7k0og+s83Di0E20dT/T5zbFw/Axkn9jA==",
       "type": "package",
@@ -2872,6 +2867,44 @@
         "build/netcoreapp1.0/nunit.engine.netstandard.dll",
         "nunit3testadapter.3.11.0.nupkg.sha512",
         "nunit3testadapter.nuspec"
+      ]
+    },
+    "NUnitLite/3.12.0": {
+      "sha512": "EgY2STVjRNy/1zxuVz1okVx/A7KhoXH9O7MQ7i0zd6qN7MtnlnegP7iHYBNddCeDu4ME0Pn1c0X/vmM9xgoTAg==",
+      "type": "package",
+      "path": "nunitlite/3.12.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.md",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "content/Program.cs",
+        "content/Program.vb",
+        "lib/net35/nunitlite.dll",
+        "lib/net35/nunitlite.pdb",
+        "lib/net40/nunitlite.dll",
+        "lib/net40/nunitlite.pdb",
+        "lib/net45/nunitlite.dll",
+        "lib/net45/nunitlite.pdb",
+        "lib/netstandard1.4/nunitlite.dll",
+        "lib/netstandard1.4/nunitlite.pdb",
+        "lib/netstandard2.0/nunitlite.dll",
+        "lib/netstandard2.0/nunitlite.pdb",
+        "nunitlite.3.12.0.nupkg.sha512",
+        "nunitlite.nuspec",
+        "tools/install.ps1",
+        "tools/net35/nunitlite-runner.exe",
+        "tools/net35/nunitlite-runner.pdb",
+        "tools/net40/nunitlite-runner.exe",
+        "tools/net40/nunitlite-runner.pdb",
+        "tools/net45/nunitlite-runner.exe",
+        "tools/net45/nunitlite-runner.pdb",
+        "tools/netcoreapp1.1/nunitlite-runner.dll",
+        "tools/netcoreapp1.1/nunitlite-runner.pdb",
+        "tools/netcoreapp2.0/nunitlite-runner.dll",
+        "tools/netcoreapp2.0/nunitlite-runner.pdb"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -6044,8 +6077,10 @@
       "Microsoft.NETCore.App >= 2.2.0",
       "Moq >= 4.13.1",
       "NUnit >= 3.12.0",
-      "NUnit.Runners >= 3.11.1",
-      "NUnit3TestAdapter >= 3.11.0"
+      "NUnit.Console >= 3.11.1",
+      "NUnit.ConsoleRunner >= 3.11.1",
+      "NUnit3TestAdapter >= 3.11.0",
+      "NUnitLite >= 3.12.0"
     ]
   },
   "packageFolders": {
@@ -6055,9 +6090,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactTest.csproj",
-      "projectName": "EcontactTest",
-      "projectPath": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactTest.csproj",
+      "projectUniqueName": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactNUnitTest.csproj",
+      "projectName": "EcontactNUniTest",
+      "projectPath": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactNUnitTest.csproj",
       "packagesPath": "C:\\Users\\Douglas\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
@@ -6111,13 +6146,21 @@
             "target": "Package",
             "version": "[3.12.0, )"
           },
-          "NUnit.Runners": {
+          "NUnit.Console": {
+            "target": "Package",
+            "version": "[3.11.1, )"
+          },
+          "NUnit.ConsoleRunner": {
             "target": "Package",
             "version": "[3.11.1, )"
           },
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[3.11.0, )"
+          },
+          "NUnitLite": {
+            "target": "Package",
+            "version": "[3.12.0, )"
           }
         },
         "imports": [

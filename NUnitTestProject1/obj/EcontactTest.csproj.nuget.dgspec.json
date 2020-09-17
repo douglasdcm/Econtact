@@ -19,7 +19,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactTest.csproj",
-        "projectName": "EcontactTest",
+        "projectName": "EcontactNUniTest",
         "projectPath": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\EcontactTest.csproj",
         "packagesPath": "C:\\Users\\Douglas\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Douglas\\trainning\\CSharp\\Econtact\\NUnitTestProject1\\obj\\",
@@ -74,13 +74,21 @@
               "target": "Package",
               "version": "[3.12.0, )"
             },
-            "NUnit.Runners": {
+            "NUnit.Console": {
+              "target": "Package",
+              "version": "[3.11.1, )"
+            },
+            "NUnit.ConsoleRunner": {
               "target": "Package",
               "version": "[3.11.1, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[3.11.0, )"
+            },
+            "NUnitLite": {
+              "target": "Package",
+              "version": "[3.12.0, )"
             }
           },
           "imports": [
